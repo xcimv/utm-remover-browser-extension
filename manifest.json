@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "UTM Remover",
+  "version": "1.0.0",
+ 
+  "description": "Remove `utm_*` params from the query string before the request.",
+
+  "applications": {
+    "gecko": {
+      "id": "utm-remover@localhost.localdomain",
+      "strict_min_version": "45.0.0"
+    }
+  },
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "*://*/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
